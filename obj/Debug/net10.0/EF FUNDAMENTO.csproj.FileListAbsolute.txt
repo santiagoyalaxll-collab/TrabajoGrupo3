@@ -1,0 +1,15 @@
+C:\EF FUNDAMENTO\bin\Debug\net10.0\EF FUNDAMENTO.exe
+C:\EF FUNDAMENTO\bin\Debug\net10.0\EF FUNDAMENTO.deps.json
+C:\EF FUNDAMENTO\bin\Debug\net10.0\EF FUNDAMENTO.runtimeconfig.json
+C:\EF FUNDAMENTO\bin\Debug\net10.0\EF FUNDAMENTO.dll
+C:\EF FUNDAMENTO\bin\Debug\net10.0\EF FUNDAMENTO.pdb
+C:\EF FUNDAMENTO\obj\Debug\net10.0\EF FUNDAMENTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\EF FUNDAMENTO\obj\Debug\net10.0\EF FUNDAMENTO.AssemblyInfoInputs.cache
+C:\EF FUNDAMENTO\obj\Debug\net10.0\EF FUNDAMENTO.AssemblyInfo.cs
+C:\EF FUNDAMENTO\obj\Debug\net10.0\EF FUNDAMENTO.csproj.CoreCompileInputs.cache
+C:\EF FUNDAMENTO\obj\Debug\net10.0\EF FUNDAMENTO.sourcelink.json
+C:\EF FUNDAMENTO\obj\Debug\net10.0\EF FUNDAMENTO.dll
+C:\EF FUNDAMENTO\obj\Debug\net10.0\refint\EF FUNDAMENTO.dll
+C:\EF FUNDAMENTO\obj\Debug\net10.0\EF FUNDAMENTO.pdb
+C:\EF FUNDAMENTO\obj\Debug\net10.0\EF FUNDAMENTO.genruntimeconfig.cache
+C:\EF FUNDAMENTO\obj\Debug\net10.0\ref\EF FUNDAMENTO.dll
