@@ -52,13 +52,13 @@ class Program
                     AgregarProducto(); 
                     break;
                 case 2: 
-                    Console.WriteLine("..."); 
+                    MostrarProductos(); 
                     break;
                 case 3: 
-                    Console.WriteLine("..."); 
+                    BuscarProducto(); 
                     break;
                 case 4: 
-                    Console.WriteLine("..."); 
+                    ContarProductos(); 
                     break;
                 case 0: 
                     Console.WriteLine("Hasta luego!"); 
@@ -100,9 +100,91 @@ class Program
         Console.WriteLine($"✔ Snack '{nombre} ({peso})' guardado con ID {id}.");
     }
 
+    
     static int ContarLineas()
     {
         if (!File.Exists(archivoTexto)) return 0;
         return File.ReadAllLines(archivoTexto).Length;
+    }
+
+    
+    static void MostrarProductos()
+    {
+        if (!File.Exists(archivoTexto))
+        {
+            Console.WriteLine("No hay snacks registrados aun.");
+            return;
+        }
+
+        Console.WriteLine("\n{0,-5} {1,-35} {2,-10} {3,-10} {4,-12}", "ID", "Producto / Descripcion", "Peso", "Stock", "Precio");
+        Console.WriteLine(new string('-', 75));
+
+        using (StreamReader sr = new StreamReader(archivoTexto, System.Text.Encoding.UTF8))
+        {
+            sr.ReadLine(); // Saltar encabezado
+            string linea;
+            while ((linea = sr.ReadLine()) != null)
+            {
+                if (string.IsNullOrWhiteSpace(linea)) continue;
+                ProductoInfo p = ParsearLinea(linea);
+                Console.WriteLine("{0,-5} {1,-35} {2,-10} {3,-10} S/.{4,-10:F2}", p.Id, p.Nombre, p.Peso, p.Stock, p.Precio);
+            }
+        }
+    }
+
+    
+    static void BuscarProducto()
+    {
+        if (!File.Exists(archivoTexto))
+        {
+            Console.WriteLine("No hay snacks registrados para buscar.");
+            return;
+        }
+
+        Console.Write("Nombre del snack a buscar: ");
+        string buscar = Console.ReadLine().ToLower();
+        bool encontrado = false;
+
+        using (StreamReader sr = new StreamReader(archivoTexto, System.Text.Encoding.UTF8))
+        {
+            sr.ReadLine(); 
+            string linea;
+            while ((linea = sr.ReadLine()) != null)
+            {
+                if (string.IsNullOrWhiteSpace(linea)) continue;
+                ProductoInfo p = ParsearLinea(linea);
+                
+               
+                if (p.Nombre.ToLower().Contains(buscar))
+                {
+                    Console.WriteLine($"✔ Encontrado → ID:{p.Id} | {p.Nombre} ({p.Peso}) | Stock:{p.Stock} | S/.{p.Precio:F2}");
+                    encontrado = true;
+                }
+            }
+        }
+        if (!encontrado) Console.WriteLine("No se encontro ningun snack con ese nombre.");
+    }
+
+    
+    static void ContarProductos()
+    {
+        int total = ContarLineas();
+        
+        int totalSnacks = total > 0 ? total - 1 : 0;
+        Console.WriteLine($"Total de snacks registrados en el CSV: {totalSnacks}");
+    }
+
+   
+    static ProductoInfo ParsearLinea(string linea)
+    {
+        string[] partes = linea.Split(';');
+        return new ProductoInfo
+        {
+            Id = int.Parse(partes[0]),
+            Nombre = partes[1],
+            Peso = partes[2],
+            Stock = int.Parse(partes[3]),
+            Precio = double.Parse(partes[4])
+        };
     }
 }
