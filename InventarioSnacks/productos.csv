@@ -1,0 +1,19 @@
+﻿ID;Producto;peso;stock;Precio
+1;Patas de pavo;100g;45;13.00
+2;Patas de pavo;200g;45;26.00
+3;Patas de pollo;100g;60;9.00
+4;Patas de pollo;200g;60;18.00
+5;Snack deshidratado de bazo de res;45g;15;10.00
+6;Snack deshidratado de bazo de res;90g;15;20.00
+7;Snack deshidratado de caballo;45g;30;12.00
+8;Snack deshidratado de caballo;90g;30;24.00
+9;Snack deshidratado de higado de res;45g;25;11.00
+10;Snack deshidratado de higado de res;90g;25;22.00
+11;Snack deshidratado de pavo;45g;40;13.00
+12;Snack deshidratado de pavo;90g;40;26.00
+13;Snack deshidratado de pollo;45g;50;12.00
+14;Snack deshidratado de pollo;90g;50;24.00
+15;Snack deshidratado de pulmon de caballo;45g;20;10.00
+16;Snack deshidratado de pulmon de caballo;90g;20;20.00
+17;Snack deshidratado de pulmon de res;45g;35;10.00
+18;Snack deshidratado de pulmon de res;90g;35;20.00
