@@ -67,6 +67,7 @@ class Program
     }
 
     
+   // CONTROL 1: Agregar snack manual
     static void AgregarProducto()
     {
         Console.Write("Nombre del snack: ");
