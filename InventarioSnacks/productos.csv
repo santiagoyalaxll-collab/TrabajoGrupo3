@@ -1,19 +1,54 @@
-﻿ID;Producto;peso;stock;Precio
-1;Patas de pavo;100g;45;13.00
-2;Patas de pavo;200g;45;26.00
-3;Patas de pollo;100g;60;9.00
-4;Patas de pollo;200g;60;18.00
-5;Snack deshidratado de bazo de res;45g;15;10.00
-6;Snack deshidratado de bazo de res;90g;15;20.00
-7;Snack deshidratado de caballo;45g;30;12.00
-8;Snack deshidratado de caballo;90g;30;24.00
-9;Snack deshidratado de higado de res;45g;25;11.00
-10;Snack deshidratado de higado de res;90g;25;22.00
-11;Snack deshidratado de pavo;45g;40;13.00
-12;Snack deshidratado de pavo;90g;40;26.00
-13;Snack deshidratado de pollo;45g;50;12.00
-14;Snack deshidratado de pollo;90g;50;24.00
-15;Snack deshidratado de pulmon de caballo;45g;20;10.00
-16;Snack deshidratado de pulmon de caballo;90g;20;20.00
-17;Snack deshidratado de pulmon de res;45g;35;10.00
-18;Snack deshidratado de pulmon de res;90g;35;20.00
+﻿ID;Producto;peso;stock;Precio;Disponible
+1;Pollo;45gr;50;14.50;True
+2;Pollo;90gr;0;19.80;False
+3;Pollo;180gr;50;29.50;True
+4;Pavo;45gr;50;15.50;True
+5;Pavo;90gr;50;21.00;True
+6;Pavo;180gr;50;31.50;True
+7;Caballo;45gr;0;17.00;False
+8;Caballo;90gr;50;24.50;True
+9;Caballo;180gr;50;36.00;True
+10;Llama;45gr;50;18.50;True
+11;Llama;90gr;0;26.00;False
+12;Llama;180gr;50;38.50;True
+13;Pulmon-Res;45gr;50;13.50;True
+14;Pulmon-Res;90gr;50;18.00;True
+15;Pulmon-Res;180gr;50;27.00;True
+16;Pulmon-Caballo;45gr;50;15.00;True
+17;Pulmon-Caballo;90gr;0;21.00;False
+18;Pulmon-Caballo;180gr;50;31.00;True
+19;Bazo-Res;45gr;0;13.50;False
+20;Bazo-Res;90gr;50;18.00;True
+21;Bazo-Res;180gr;50;27.00;True
+22;Higado-Res;45gr;50;14.00;True
+23;Higado-Res;90gr;0;19.50;False
+24;Higado-Res;180gr;50;28.50;True
+25;Higado-Caballo;45gr;50;16.00;True
+26;Higado-Caballo;90gr;0;23.00;False
+27;Higado-Caballo;180gr;0;34.00;False
+28;Corazon-Pollo;45gr;50;14.50;True
+29;Corazon-Pollo;90gr;50;20.00;True
+30;Corazon-Pollo;180gr;50;29.50;True
+31;Corazon-Pavo;45gr;50;15.50;True
+32;Corazon-Pavo;90gr;0;22.00;False
+33;Corazon-Pavo;180gr;50;32.50;True
+34;Molleja-Pollo;45gr;0;13.50;False
+35;Molleja-Pollo;90gr;50;18.50;True
+36;Molleja-Pollo;180gr;50;27.50;True
+37;Patas-Pollo;100gr;50;19.00;True
+38;Patas-Pollo;200gr;50;32.00;True
+39;Patas-Pavo;100gr;50;21.00;True
+40;Patas-Pavo;200gr;0;35.00;False
+41;Mix-Pollo;45gr;50;16.50;True
+42;Mix-Pollo;90gr;50;24.00;True
+43;Mix-Pollo;180gr;50;35.50;True
+44;Mix-Res;45gr;50;16.00;True
+45;Mix-Res;90gr;50;23.50;True
+46;Mix-Res;180gr;50;34.50;True
+47;Mix-Pavo;180gr;0;37.00;False
+48;Esofago-Res;100gr;50;20.00;True
+49;Esofago-Res;200gr;50;33.50;True
+50;Cuello-Pollo;100gr;50;18.00;True
+51;Cuello-Pollo;200gr;50;30.00;True
+52;Cuello-Pavo;100gr;0;20.50;False
+53;Cuello-Pavo;200gr;50;33.00;True
