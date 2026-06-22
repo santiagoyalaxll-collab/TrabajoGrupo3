@@ -67,7 +67,7 @@ class Program
     }
 
     
-   // CONTROL 1: Agregar snack manual
+   // CONTROL 1: Agregar snack manualmente
     static void AgregarProducto()
     {
         Console.Write("Nombre del snack: ");
@@ -104,6 +104,7 @@ class Program
     }
 
    
+    // CONTROL 2: Mostrar contenido del CSV ordenado en tabla
     static void MostrarProductos()
     {
         if (!File.Exists(archivoTexto))
