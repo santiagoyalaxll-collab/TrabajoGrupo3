@@ -59,7 +59,7 @@ class Program
                 case 4: ContarProductos(); break;
                 case 8: ModificarProducto(); break;
                 case 9: EliminarProducto(); break;
-                case 10: CambiarEstadoProducto(); break; // Llama al módulo definitivo
+                case 10: CambiarEstadoProducto(); break;
                 case 0: Console.WriteLine("Hasta luego!"); break;
                 default: Console.WriteLine("Opcion no valida."); break;
             }
@@ -94,7 +94,7 @@ class Program
             sw.WriteLine($"{id};{nombre};{peso};{stock};{precio:F2};True");
         }
 
-        Console.WriteLine($"✔ Snack '{nombre} ({peso})' guardado con ID {id}.");
+        Console.WriteLine($"Snack '{nombre} ({peso})' guardado con ID {id}.");
     }
 
     static int ContarLineas()
@@ -130,6 +130,7 @@ class Program
         }
     }
 
+    // CONTROL 3: Buscar snack por nombre
     static void BuscarProducto()
     {
         if (!File.Exists(archivoTexto))
@@ -153,7 +154,7 @@ class Program
                 if (p.Nombre.ToLower().Contains(buscar))
                 {
                     string estadoStr = p.Disponible ? "Disponible" : "No disponible";
-                    Console.WriteLine($"✔ Encontrado → ID:{p.Id} | {p.Nombre} ({p.Peso}) | Stock:{p.Stock} | S/.{p.Precio:F2} | {estadoStr}");
+                    Console.WriteLine($"Encontrado -> ID:{p.Id} | {p.Nombre} ({p.Peso}) | Stock:{p.Stock} | S/.{p.Precio:F2} | {estadoStr}");
                     encontrado = true;
                 }
             }
@@ -161,6 +162,7 @@ class Program
         if (!encontrado) Console.WriteLine("No se encontro ningun snack con ese nombre.");
     }
 
+    // CONTROL 4: Contar total de snacks
     static void ContarProductos()
     {
         int total = ContarLineas();
@@ -189,7 +191,7 @@ class Program
 
         if (producto == null)
         {
-            Console.WriteLine($"No se encontro ningún snack con el ID {idBuscar}.");
+            Console.WriteLine($"No se encontro ningun snack con el ID {idBuscar}.");
             return;
         }
 
@@ -206,10 +208,10 @@ class Program
         producto.Precio = double.Parse(Console.ReadLine());
 
         GuardarLista(lista);
-        Console.WriteLine("✔ El producto fue modificado correctamente en el archivo CSV.");
+        Console.WriteLine("El producto fue modificado correctamente en el archivo CSV.");
     }
 
-    
+    // CONTROL 9: Eliminar un snack existente por ID
     static void EliminarProducto()
     {
         if (!File.Exists(archivoTexto))
@@ -230,16 +232,16 @@ class Program
 
         if (producto == null)
         {
-            Console.WriteLine($"No se encontro ningún snack con el ID {idBuscar}.");
+            Console.WriteLine($"No se encontro ningun snack con el ID {idBuscar}.");
             return;
         }
 
         lista.Remove(producto);
         GuardarLista(lista);
-        Console.WriteLine($"✔ El producto '{producto.Nombre}' fue eliminado y el archivo CSV se ha actualizado.");
+        Console.WriteLine($"El producto '{producto.Nombre}' fue eliminado y el archivo CSV se ha actualizado.");
     }
 
-    
+    // CONTROL 10: Cambiar estado (Disponible / No disponible) de un snack
     static void CambiarEstadoProducto()
     {
         if (!File.Exists(archivoTexto))
@@ -260,16 +262,16 @@ class Program
 
         if (producto == null)
         {
-            Console.WriteLine($"No se encontro ningún snack con el ID {idBuscar}.");
+            Console.WriteLine($"No se encontro ningun snack con el ID {idBuscar}.");
             return;
         }
 
         string estadoAnterior = producto.Disponible ? "Disponible" : "No disponible";
-        producto.Disponible = !producto.Disponible; // Operación de inversión lógica (Toggle)
+        producto.Disponible = !producto.Disponible;
         string estadoNuevo = producto.Disponible ? "Disponible" : "No disponible";
 
         GuardarLista(lista);
-        Console.WriteLine($"✔ Estado de '{producto.Nombre}' cambiado de '{estadoAnterior}' a '{estadoNuevo}'.");
+        Console.WriteLine($"Estado de '{producto.Nombre}' cambiado de '{estadoAnterior}' a '{estadoNuevo}'.");
     }
 
     
