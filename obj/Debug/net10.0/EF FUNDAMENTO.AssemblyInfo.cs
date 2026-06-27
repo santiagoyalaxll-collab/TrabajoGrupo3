@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EF FUNDAMENTO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a1f503cc68a9b7f42d5f7051e1e51714ad1327c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b2c3b61a2b388f3a0e5c3ac90a6eb2330bb8c40")]
 [assembly: System.Reflection.AssemblyProductAttribute("EF FUNDAMENTO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EF FUNDAMENTO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
