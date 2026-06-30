@@ -1,0 +1,15 @@
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\bin\Debug\net10.0\InventarioSnacks.exe
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\bin\Debug\net10.0\InventarioSnacks.deps.json
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\bin\Debug\net10.0\InventarioSnacks.runtimeconfig.json
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\bin\Debug\net10.0\InventarioSnacks.dll
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\bin\Debug\net10.0\InventarioSnacks.pdb
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\InventarioSnacks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\InventarioSnacks.AssemblyInfoInputs.cache
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\InventarioSnacks.AssemblyInfo.cs
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\InventarioSnacks.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\InventarioSnacks.sourcelink.json
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\InventarioSnacks.dll
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\refint\InventarioSnacks.dll
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\InventarioSnacks.pdb
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\InventarioSnacks.genruntimeconfig.cache
+C:\Users\Usuario\TrabajoGrupo3\InventarioSnacks\obj\Debug\net10.0\ref\InventarioSnacks.dll
