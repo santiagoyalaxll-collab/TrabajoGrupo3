@@ -1,4 +1,4 @@
-﻿ID;Producto;peso;stock;Precio;Disponible
+ID;Producto;peso;stock;Precio;Disponible
 1;Pollo;45gr;50;14.50;True
 2;Pollo;90gr;0;19.80;False
 3;Pollo;180gr;50;29.50;True
@@ -49,3 +49,6 @@
 48;Esofago-Res;100gr;50;20.00;True
 49;Esofago-Res;200gr;50;33.50;True
 50;Cuello-Pollo;100gr;50;18.00;True
+51;Cuello-Pollo;200gr;50;30.00;True
+52;Cuello-Pavo;100gr;0;20.50;False
+53;Cuello-Pavo;200gr;50;33.00;True
